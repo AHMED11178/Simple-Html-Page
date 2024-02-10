@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Index page</title>
+</head>
+<body>
+
+    <img src="C:\Users\mhaah\Desktop\semester 232\SWE 363\Common HWs\HW1\Starter Code\images\AskItNowLogo.png" alt="The Main Photo">
+    <a href="Index.html">AskItNow</a>
+    <form action="Index.html" method="POST">
+        <input type="text" name="Search" id="Search" placeholder="Search Questions">
+    </form>
+    <p></p>
+
+    <a href="auth.html">Login </a><img src="https://www.gravatar.com/avatar/placeholder?s=50&d=robohash" width="50" height="40" alt="The Login Page">
+    
+    <div>
+        <h1><br>All Questions</h1>
+
+        <form action="Index.html" method="POST">
+            <input type="submit" value="➕Ask a New Question">
+        </form>
+
+        <label for="Dates">Sort by:</label>
+        <select name="Dates">
+            <option value="Newest">Newest</option>
+            <option value="Oldest">Oldest</option>
+            <option value="Most Answered">Most Answered</option>
+        </select>
+        <label for="Times">Filter:</label>
+        <select name="Times">
+            <option value="All">All</option>
+            <option value="Answered">Answered</option>
+            <option value="Unanswered">Unanswered</option>
+        </select>
+        <p>✔ <br>3 Answers<br></p>
+    </div>
+
+    <div>
+        <a href="question.html"><h1>How do I solve a NullPointerException in Java?</h1></a>
+        <p>
+            I'm getting a NullPointerException when trying to access...<br>
+            <a href="Index.html">java</a>  <a href="Index.html">nullpointerexception</a><br>
+            Asked by: Ali Ahmed<br>
+            Asked on: 11/01/2024<br>
+            1 Answer<br>
+        </p>
+    </div>
+
+    <div>
+        <a href="question.html"><h1>How to convert a string to lowercase in Python?</h1></a>
+        <p>
+            I have a string and I want to convert...<br>
+            <a href="Index.html">python</a> <a href="Index.html">string</a><br>
+            Asked by: Khalid Ahmed<br>
+            Asked on: 01/01/2024<br>
+            x<br>
+        </p>
+    </div>
+
+    <div>
+        <h1>Ask a New Question</h1>
+        <form action="Index.html" method="POST">
+            <p>
+                <label for="Title">Title</label>
+                <input type="text" name="Title" id="Title">
+            </p>
+            <p>
+                <label for="Details">Details</label>
+                <textarea name="Details" rows="4" cols="50"></textarea>
+            </p>
+            <p>
+                <label for="Tags">Tags</label>
+                <input type="text" name="Tags" id="Tags" placeholder="e.g. java, nullPointerException">
+            </p>
+            <p>
+                <input type="submit" value="Submit Question">
+            </p>
+        </form>
+    </div>
+
+    <div>
+        <h1>Top Tags</h1>
+        <ul>
+            <li>java (10)</li>
+            <li>python (5)</li>
+            <li>javascript (3)</li>
+            <li>array (2)</li>
+            <li>string (1)</li>
+        </ul>
+    </div>
+
+
+    <p>2024 Ask It Now Q&A Platform - All rights reserved.</p>
+
+
+    
+</body>
+
+</html>
