@@ -188,11 +188,6 @@
     grid-row: 2 / 2;
 }
 
-#griditem3div6 {
-
-    color: white;
-    background-color: #4a90e2;
-}
 
 #grid-container-div7 {
 
@@ -232,6 +227,14 @@ label {
     display: inline-block;
     text-align: center;
     margin-right: 8px;
+}
+
+ul, li, a {
+
+    color: white;
+    background-color: #4a90e2;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 

@@ -3,70 +3,140 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>auth page</title>
+    <link rel="stylesheet" href="auth.css">
 </head>
 
 <body>
 
-    <div>
-        <img src="C:\Users\mhaah\Desktop\semester 232\SWE 363\Common HWs\HW1\Starter Code\images\AskItNowLogo.png"
-            alt="The Main Photo">
-        <a href="Index.html">AskItNow</a>
-        <form action="Index.html" method="POST">
-            <input type="text" name="Search" id="Search" placeholder="Search Questions">
-        </form>
-        <p></p>
-        <a href="auth.html">Login </a><img src="https://www.gravatar.com/avatar/placeholder?s=50&d=robohash" width="50"
-            height="40" alt="The Login Page">
+    <div id="grid-container-div1">
+
+        <div>
+            <img id="Mainimg" src="C:\Users\mhaah\Desktop\semester 232\SWE 363\Common HWs\HW1\Starter Code\images\AskItNowLogo.png" alt="The Main Photo">
+        </div>
+
+        <div>
+            <a href="Index.html">AskItNow</a>
+        </div>
+
+        <div>
+            <form action="Index.html" method="POST">
+                <input id="searchbox" type="text" name="Search" id="Search" placeholder="Search Questions">
+            </form>
+        </div>
+
+        <div>
+            <a href="auth.html">Login </a>
+        </div>
+        
+        <div>
+            <img id="Loginimg" src="https://www.gravatar.com/avatar/placeholder?s=50&d=robohash" width="50" height="40" alt="The Login Page">
+        </div>
+
+    </div>
+
+    <div id="grid-container-div2">
+
+        <div id="griditem4div2">
+            <h1>Login</h1>
+        </div>
+
+        <div id="griditem1div2">
+            <form action="auth.html" method="POST">
+                 <input type="text" name="Email" id="Email">
+            </form>
+        </div>
+
+        <div id="griditem5div2">
+            <label for="Email">Email</label>
+        </div>
+
+        <div id="griditem2div2">
+            <form action="auth.html" method="POST">
+                <input type="text" name="Password" id="Password">
+            </form>
+        </div>
+
+        <div id="griditem6div2">
+            <label for="Password">Password</label>
+        </div>
+
+        <div id="griditem3div2">
+            <form action="auth.html" method="POST">
+                <input type="submit" value="OR register if you don't have an account">
+            </form>
+        </div>
+
+        <div id="griditem7div2">
+            <form action="auth.html" method="POST"></form>
+                <input id="loginBox" type="submit" value="Login">
+            </form>
+        </div>  
+
     </div>
 
     <div>
-        <h1>Login</h1>
-        <form action="auth.html" method="POST">
-            <p>
-                <label for="Email">Email</label>
-                <input type="text" name="Email" id="Email">
-            </p>
-            <p>
-                <label for="Password">Password</label>
-                <input type="text" name="Password" id="Password">
-            </p>
-            <p>
-                <input type="submit" value="Login">
-                <input type="submit" value="OR register if you don't have an account"> 
-            </p>
 
-        </form>
-    </div>
-
-    <div>
-        <h1>Register</h1>
-        <form action="auth.html" method="POST">
-            <p>
-                <label for="Email">Email</label>
+        <div>
+            <h1>Register</h1>
+        </div>
+        
+        <div>
+            <form action="auth.html" method="POST">
                 <input type="text" name="Email" id="Email">
-            </p>
-            <p>
-                <label for="Password">Password</label>
+            </form>
+        </div>
+
+        <div>
+            <label for="Email">Email</label>
+        </div>
+
+        <div>
+            <form action="auth.html" method="POST">
                 <input type="text" name="Password" id="Password">
-            </p>
-            <p>
-                <label for="Full Name">Full Name</label>
+            </form>
+        </div>
+
+        <div>
+            <label for="Password">Password</label>
+        </div>
+
+        <div>
+            <form action="auth.html" method="POST">
                 <input type="text" name="Full Name" id="Full Name">
-            </p>
-            <p>
-                <label for="Bio">Bio</label>
+            </form>
+        </div>
+
+        <div>
+            <label for="Full Name">Full Name</label>
+        </div>
+
+        <div>
+            <form action="auth.html" method="POST">
                 <textarea name="Bio" rows="4" cols="50"></textarea>
-            </p>
-            <p>
+            </form>
+        </div>
+
+        <div>
+            <label for="Bio">Bio</label>
+        </div>
+
+        <div>
+            <form action="auth.html" method="POST">
                 <label for="Avatar Image">Avatar Image</label>
-                <input type="submit" value="Choose File">
-                No File Choosen
-            </p>
-            <p>
+            </form>
+        </div>
+
+        <div>
+            <input type="submit" value="Choose File"><p>No File Choosen</p>
+        </div>
+
+        <div>
+            <form action="auth.html" method="POST">
                 <input type="submit" value="Create Profile">
-            </p>
-        </form>
+            </form>
+        </div>
     </div>
 
     <div>
