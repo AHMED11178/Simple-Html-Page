@@ -41,7 +41,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     padding-left: 100px;
-    padding-right: 50px;   
+    padding-right: 50px;
+    margin-right: 350px;
 }
 
 #griditem1div2 {
@@ -99,7 +100,8 @@ input, select, textarea {
     border: 1px solid #aaa;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-right: 300px;
+    
+    
 }
 
 #grid-container-div3 {
@@ -110,7 +112,7 @@ input, select, textarea {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     padding-left: 100px;
     padding-right: 50px;
-    background-color:aqua;
+    margin-right: 350px;
 }
 
 #griditem1div3 {
@@ -155,6 +157,13 @@ input, select, textarea {
     grid-row: 7 / 8;
 }
 
+#profileBox {
+
+    color: white;
+    background-color: #1a3556;
+    width: 200px;
+}
+
 #griditem8div3 {
 
     grid-column: 2 / 2;
@@ -177,11 +186,45 @@ input, select, textarea {
 
     grid-column: 2 / 2;
     grid-row: 5 / 6;
+    
 }
 
 #griditem12div3 {
 
     grid-column: 2 / 2;
     grid-row: 6 / 7;
+    border: solid 1px gray;
+    
 }
+
+
+#choseFile {
+
+    width: 100px;
+}
+
+#grid-container-div4 {
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-color: #4a90e2;
+    color: white;
+
+}
+
+#griditem1div4 {
+
+    background: #121FCF;
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#griditem2div4 {
+
+    justify-self: center;
+}
+
+
 
