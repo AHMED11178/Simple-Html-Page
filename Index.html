@@ -4,68 +4,118 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index page</title>
-    <link rel="MobileStyleSheet" href="Mobile.css">
-    <link rel="TabletStyleSheet" href="Tablet.css">
-    <link rel="DesktopStyleSheet" href="Desktop.css">
+    <link rel="MobileStyleSheet" media="screen and (max-width: 767px)" href="Mobile.css">
+    <link rel="TabletStyleSheet" media="screen and (min-width: 768px) and (max-width: 991px)" href="Tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="Desktop.css">
 </head>
 <body>
 
-    <div>
-        <img src="C:\Users\mhaah\Desktop\semester 232\SWE 363\Common HWs\HW1\Starter Code\images\AskItNowLogo.png" alt="The Main Photo">
-        <a href="Index.html">AskItNow</a>
-        <form action="Index.html" method="POST">
-            <input type="text" name="Search" id="Search" placeholder="Search Questions">
-        </form>
-        <p></p>
-        <a href="auth.html">Login </a><img src="https://www.gravatar.com/avatar/placeholder?s=50&d=robohash" width="50" height="40" alt="The Login Page">
+    <div id="grid-container-div1">
+
+        <div>
+            <img id="Mainimg" src="C:\Users\mhaah\Desktop\semester 232\SWE 363\Common HWs\HW1\Starter Code\images\AskItNowLogo.png" alt="The Main Photo">
+        </div>
+
+        <div>
+            <a href="Index.html">AskItNow</a>
+        </div>
+
+        <div>
+            <form action="Index.html" method="POST">
+                <input id="searchbox" type="text" name="Search" id="Search" placeholder="Search Questions">
+            </form>
+        </div>
+        
+        <div>
+            <a href="auth.html">Login </a>
+        </div>
+
+        <div>
+            <img id="Loginimg" src="https://www.gravatar.com/avatar/placeholder?s=50&d=robohash" width="50" height="40" alt="The Login Page">
+        </div>
+
+    </div>
+
+    <div id="grid-container-div2">
+
+        <div>
+            <h1>All Questions</h1>
+        </div>
+
+        <div id="griditem3">
+            <form action="Index.html" method="POST">
+                <input id="griditem4" type="submit" value="➕Ask a New Question">
+            </form>
+        </div>
+
+        <div id="griditem1">
+            <label for="Dates">Sort by:</label>
+            <select name="Dates">
+                <option value="Newest">Newest</option>
+                <option value="Oldest">Oldest</option>
+                <option value="Most Answered">Most Answered</option>
+            </select>
+        </div>
+
+        <div id="griditem2">
+            <label for="Times">Filter:</label>
+            <select name="Times">
+                <option value="All">All</option>
+                <option value="Answered">Answered</option>
+                <option value="Unanswered">Unanswered</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="grid-container-div3">
+
+        <div>
+            <p id="griditem1div4">✔</p>
+            <p>3 Answers</p>
+        </div>
+
+        <div>
+            <a href="question.html"><h1>How do I solve a NullPointerException in Java?</h1></a>
+            <p>I'm getting a NullPointerException when trying to access...</p>
+            <a id="griditem1div3" href="Index.html">java</a> <a id="griditem1div3" href="Index.html">nullpointerexception</a>
+        </div>
+        
+        <div id="griditem2div3">
+            <p>Asked by: Ali Ahmed<br>
+            Asked on: 11/01/2024</p>
+        </div>
+            
+    </div>
+
+    <div id="grid-container-div4">
+
+        <div>
+            <p>1 Answer<p>
+        </div>
+
+        <div>
+            <a href="question.html"><h1>How to convert a string to lowercase in Python?</h1></a>
+            <p> I have a string and I want to convert...</p>
+            <a id="griditem1div3" href="Index.html">python</a> <a id="griditem1div3" href="Index.html">string</a>
+        </div>
+
+        <div id="griditem2div3">
+            <p>Asked by: Khalid Ahmed<br>
+            Asked on: 01/01/2024</p>
+        </div>
+
     </div>
 
     <div>
-        <h1><br>All Questions</h1>
 
-        <form action="Index.html" method="POST">
-            <input type="submit" value="➕Ask a New Question">
-        </form>
+        <div>
+            <p>X</p>
+        </div>
 
-        <label for="Dates">Sort by:</label>
-        <select name="Dates">
-            <option value="Newest">Newest</option>
-            <option value="Oldest">Oldest</option>
-            <option value="Most Answered">Most Answered</option>
-        </select>
-        <label for="Times">Filter:</label>
-        <select name="Times">
-            <option value="All">All</option>
-            <option value="Answered">Answered</option>
-            <option value="Unanswered">Unanswered</option>
-        </select>
-        <p>✔ <br>3 Answers<br></p>
-    </div>
+        <div>
+            <h1>Ask a New Question</h1>
+        </div>
 
-    <div>
-        <a href="question.html"><h1>How do I solve a NullPointerException in Java?</h1></a>
-        <p>
-            I'm getting a NullPointerException when trying to access...<br>
-            <a href="Index.html">java</a>  <a href="Index.html">nullpointerexception</a><br>
-            Asked by: Ali Ahmed<br>
-            Asked on: 11/01/2024<br>
-            1 Answer<br>
-        </p>
-    </div>
-
-    <div>
-        <a href="question.html"><h1>How to convert a string to lowercase in Python?</h1></a>
-        <p>
-            I have a string and I want to convert...<br>
-            <a href="Index.html">python</a> <a href="Index.html">string</a><br>
-            Asked by: Khalid Ahmed<br>
-            Asked on: 01/01/2024<br>
-            x<br>
-        </p>
-    </div>
-
-    <div>
-        <h1>Ask a New Question</h1>
         <form action="Index.html" method="POST">
             <p>
                 <label for="Title">Title</label>
