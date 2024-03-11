@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index page</title>
-    <link rel="MobileStyleSheet" media="screen and (max-width: 767px)" href="Mobile.css">
-    <link rel="TabletStyleSheet" media="screen and (min-width: 768px) and (max-width: 991px)" href="Tablet.css">
-    <link rel="stylesheet" media="screen and (min-width: 992px)" href="Desktop.css">
+    <link rel="stylesheet" href="Desktop.css">
 </head>
 <body>
 
@@ -16,7 +14,7 @@
             <img id="Mainimg" src="C:\Users\mhaah\Desktop\semester 232\SWE 363\Common HWs\HW1\Starter Code\images\AskItNowLogo.png" alt="The Main Photo">
         </div>
 
-        <div>
+        <div id="griditem1div7">
             <a href="Index.html">AskItNow</a>
         </div>
 
@@ -106,39 +104,49 @@
 
     </div>
 
-    <div>
+    <div id="grid-container-div5">
 
-        <div>
+        <div id="griditem2div5">
             <p>X</p>
         </div>
 
-        <div>
+        <div id="griditem1div5">
             <h1>Ask a New Question</h1>
         </div>
 
-        <form action="Index.html" method="POST">
-            <p>
+        <div id="griditem3div5">
+            <form action="Index.html" method="POST">
                 <label for="Title">Title</label>
                 <input type="text" name="Title" id="Title">
-            </p>
-            <p>
+            </form>
+        </div>
+
+        <div id="griditem4div5">
+            <form action="Index.html" method="POST">
                 <label for="Details">Details</label>
                 <textarea name="Details" rows="4" cols="50"></textarea>
-            </p>
-            <p>
+            </form>
+        </div>
+
+        <div id="griditem5div5">
+            <form action="Index.html" method="POST">
                 <label for="Tags">Tags</label>
                 <input type="text" name="Tags" id="Tags" placeholder="e.g. java, nullPointerException">
-            </p>
-            <p>
+            </form>
+        </div>
+
+        <div id="griditem6div5">
+            <form action="Index.html" method="POST">
                 <input type="submit" value="Submit Question">
-            </p>
-        </form>
+            </form>
+        </div>
+
     </div>
 
-    <div>
-        <h1>Top Tags</h1>
-        <ul>
-            <li><a href="Index.html">java (10)</a></li>
+    <div id="grid-container-div6">
+        <h1 id="griditem1div6">Top Tags</h1>
+        <ul id="griditem2div6">
+            <li><a id="griditem3div6" href="Index.html">java (10)</a></li>
             <li><a href="Index.html">python (5)</a></li>
             <li><a href="Index.html">javascript (3)</a></li>
             <li><a href="Index.html">array (2)</a></li>
@@ -146,8 +154,8 @@
         </ul>
     </div>
 
-    <div>
-        <p>Ⓒ 2024 Ask It Now Q&A Platform - All rights reserved.</p>
+    <div id="grid-container-div7">
+        <p id="griditem2div7">Ⓒ 2024 <span id="griditem1div7">Ask It Now</span> Q&A Platform - All rights reserved.</p>
     </div>
 
 </body>
