@@ -3,48 +3,95 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>question page</title>
+    <link rel="stylesheet" href="question.css">
 </head>
 
 <body>
 
-    <div>
-        <img src="C:\Users\mhaah\Desktop\semester 232\SWE 363\Common HWs\HW1\Starter Code\images\AskItNowLogo.png"
-            alt="The Main Photo">
-        <a href="Index.html">AskItNow</a>
-        <form action="Index.html" method="POST">
-            <input type="text" name="Search" id="Search" placeholder="Search Questions">
-        </form>
-        <p></p>
-        <a href="auth.html">Login </a><img src="https://www.gravatar.com/avatar/placeholder?s=50&d=robohash" width="50"
-            height="40" alt="The Login Page">
-        <p>Asked At: 01/01/2024</p>
+    <div id="grid-container-div1">
+
+        <div>
+            <img id="Mainimg" src="C:\Users\mhaah\Desktop\semester 232\SWE 363\Common HWs\HW1\Starter Code\images\AskItNowLogo.png" alt="The Main Photo">
+        </div>
+
+        <div>
+            <a href="Index.html">AskItNow</a>
+        </div>
+        
+        <div>
+            <form action="Index.html" method="POST">
+                <input id="searchbox" type="text" name="Search" id="Search" placeholder="Search Questions">
+            </form>
+        </div>
+
+        <div>
+            <a href="auth.html">Login </a>
+        </div>
+
+        <div>
+            <img id="Loginimg" src="https://www.gravatar.com/avatar/placeholder?s=50&d=robohash" width="50" height="40" alt="The Login Page">
+        </div>
+        
     </div>
 
-    <div>
-        <h1>How do I solve a NullPointerException in Java?</h1>
-        <p>I'm getting a NullPointerException when trying to access a variable. How can I solve this?</p>
-        <p><a href="question.html">java</a> <a href="question.html">exception</a> Asked by: John Doe</p>
+    <div id="grid-container-div2">
+        <div id="griditem1div2">
+            <p>Asked At: 01/01/2024</p>
+        </div>
+
+        <div id="griditem2div2">
+            <h1>How do I solve a NullPointerException in Java?</h1>
+        </div>
+
+        <div id="griditem3div2">
+            <p>I'm getting a NullPointerException when trying to access a variable. How can I solve this?</p>
+        </div>
+
+        <div id="griditem4div2">
+            <p><a id="linksdiv2" href="question.html">java</a> <a id="linksdiv2" href="question.html">exception</a></p>
+        </div>
+
+        <div id="griditem5div2">
+            <p>Asked by: John Doe</p>
+        </div>
     </div>
 
-    <div>
-        <p>
+    <div id="grid-container-div3">
+
+        <div>
             <h1>Answers</h1>
-            <input type="submit" value="👍"><br>
-            5<br>
-            <input type="submit" value="👎"> <input type="submit" value="Accept"><br>
-            ✔<br><br>
-            You need to check if the variable is null before accessing it.<br><br>
-            Answered on: 02/01/2024 Answered by: Omar Salih<br>
-            <input type="submit" value="👍"><br>
-            3<br>
-            <input type="submit" value="👎"> <input type="submit" value="Accept"><br><br>
-            Make sure to initialize the variable before using it.<br><br>
-            Answered on: 01/01/2024 Answered by: Khalid Ahmed<br>
-        </p>
+        </div>
+        
+        <div>
+            <input type="submit" value="👍">
+        </div>
+
+        <div>
+            <p>5</p>
+        </div>
+            <input type="submit" value="👎">
+        <div>
+
+        <div>
+            <p>✔</p>
+        </div>
+        
+        <div>
+            <p>You need to check if the variable is null before accessing it.<br>
+            Answered on: 02/01/2024 Answered by: Omar Salih</p>
+        </div>
+            
     </div>
 
     <div>
+        <input type="submit" value="Accept">
+        <input type="submit" value="👍"><br>
+        <p>3</p>
+        <input type="submit" value="👎">
+        <p>Make sure to initialize the variable before using it.<br><br>
+        Answered on: 01/01/2024 Answered by: Khalid Ahmed</p>
         <h1>Your Answer</h1>
         <form action="question.html" method="POST">
             <textarea name="EmptyText" rows="10" cols="25"></textarea><br>
