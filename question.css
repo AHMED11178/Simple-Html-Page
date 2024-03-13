@@ -4,7 +4,7 @@
     height: 45;
     grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
     background-color: #4a90e2;
-    padding-left: 100px;
+    padding-left: 150px;
     padding-right: 50px;
 }
 
@@ -51,6 +51,9 @@ input, select, textarea {
     padding-left: 100px;
     padding-right: 50px;
     border-bottom: solid 1px black;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: small;
     
 }
 
@@ -102,6 +105,9 @@ input, select, textarea {
     padding-left: 100px;
     padding-right: 50px;
     border-bottom: solid 1px black;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: medium;
     
 }
 
@@ -178,6 +184,9 @@ input, select, textarea {
     padding-left: 100px;
     padding-right: 50px;
     border-bottom: solid 1px black;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: medium;
 }
 
 #griditem1div4 {
