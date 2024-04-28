@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>auth page</title>
+    <script src="forntendJS.js" async></script>
     <link rel="stylesheet" href="auth.css">
 </head>
 
@@ -26,7 +27,7 @@
             </form>
         </div>
 
-        <div>
+        <div id="topLoginLink">
             <a href="auth.html">Login </a>
         </div>
         
@@ -69,14 +70,14 @@
         </div>
 
         <div id="griditem7div2">
-            <form action="auth.html" method="POST">
+            <form action='http://localhost:3000/login' method="POST">
                 <input id="loginBox" type="submit" value="Login">
             </form>
         </div>  
 
     </div>
 
-    <div id="grid-container-div3">
+    <div id="grid-container-div3" style="display: none">
 
         <div id="griditem1div3">
             <h1>Register</h1>
@@ -133,7 +134,7 @@
         </div>
 
         <div id="griditem7div3">
-            <form action="auth.html" method="POST">
+            <form action='http://localhost:3000/register' method="POST">
                 <input id="profileBox" type="submit" value="Create Profile">
             </form>
         </div>

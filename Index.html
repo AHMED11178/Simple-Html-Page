@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index page</title>
+    <script src="forntendJS.js" async></script>
     <link rel="stylesheet" href="Index.css">
 </head>
 <body>
@@ -42,12 +43,12 @@
 
         <div id="griditem3">
             <form action="Index.html" method="POST">
-                <input id="griditem4" type="submit" value="➕Ask a New Question">
+                <input id="griditem4i" type="submit" value="➕Ask a New Question">
             </form>
         </div>
 
         <div id="griditem1">
-            <label for="Dates">Sort by:</label>
+            <label id="Datesi" for="Dates">Sort by:</label>
             <select name="Dates">
                 <option value="Newest">Newest</option>
                 <option value="Oldest">Oldest</option>
@@ -65,7 +66,7 @@
         </div>
     </div>
 
-    <div id="grid-container-div3">
+    <div id="grid-container-div3i">
 
         <div>
             <p id="griditem1div4">✔</p>
@@ -85,7 +86,7 @@
             
     </div>
 
-    <div id="grid-container-div4">
+    <div id="grid-container-div4i">
 
         <div>
             <p>1 Answer<p>
@@ -104,10 +105,10 @@
 
     </div>
 
-    <div id="grid-container-div5">
+    <div id="grid-container-div5i" style="display: none">
 
-        <div id="griditem2div5">
-            <p>X</p>
+        <div id="griditem2div5i">
+            <p id="close">X</p>
         </div>
 
         <div id="griditem1div5">
@@ -136,8 +137,8 @@
         </div>
 
         <div id="griditem6div5">
-            <form action="Index.html" method="POST">
-                <input id="griditem4" type="submit" value="Submit Question">
+            <form action='http://localhost:3000/questions' method="POST">
+                <input id="griditem4i" type="submit" value="Submit Question">
             </form>
         </div>
 
