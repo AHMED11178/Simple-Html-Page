@@ -124,6 +124,23 @@ function showQuestions() {
     }
 }
 
+function displayQuestions(questions) {
+  questions.forEach(question => {
+    // Create a new anchor element
+    const a = document.createElement('a');
+
+    // Set the href attribute to '/questions/:questionId'
+    a.href = `/questions/${question._id}`;
+
+    // Set the text content to the question title
+    a.textContent = question.title;
+
+    // Append the anchor element to the DOM
+    document.body.appendChild(a);
+  });
+}
+
+
 // Function to sort the questions
 function sortQuestions(criteria) {
     if (criteria === 'Newest') {
