@@ -1,0 +1,28 @@
+{# question.njk #}
+{% extends "layout.njk" %}
+
+{% block content %}
+  <h1>{{ question.title }}</h1>
+  <p>{{ question.description }}</p>
+  <ul>
+    {% for tag in question.tags %}
+      <li>{{ tag }}</li>
+    {% endfor %}
+  </ul>
+  {% if question.answers.length > 0 %}
+    {% for answer in question.answers %}
+      <p>{{ answer.text }}</p>
+      <form action="/answer/{{ answer._id }}?method=upvote" method="GET">
+        <button type="submit">Upvote</button>
+      </form>
+      {# Similar forms for downvote and accept #}
+    {% endfor %}
+  {% else %}
+    <p>No answers yet.</p>
+  {% endif %}
+  <form action="/questions/{{ question._id }}" method="POST">
+    <input type="hidden" name="answeredBy" value="Anonymous">
+    <textarea name="text"></textarea>
+    <button type="submit">Add Answer</button>
+  </form>
+{% endblock %}

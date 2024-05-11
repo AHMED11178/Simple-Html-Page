@@ -1,0 +1,18 @@
+{# layout.njk #}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <aside>
+    {% block aside %}{% endblock %}
+  </aside>
+  <script>
+    {% block scripts %}{% endblock %}
+  </script>
+</body>
+</html>
